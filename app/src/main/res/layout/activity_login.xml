@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_b"
+    tools:context=".view.LoginActivity">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        android:id="@+id/progress"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_90sdp"
+        app:srcCompat="@drawable/login_icons"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:id="@+id/loginIcon"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        android:layout_marginTop="@dimen/_8sdp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wholeView"
+        app:layout_constraintTop_toBottomOf="@id/loginIcon">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_25sdp">
+
+            <EditText
+                android:id="@+id/loginUserName"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/user_name"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/loginPassword"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:hint="@string/pass"
+                android:inputType="textPassword" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                android:layout_marginTop="@dimen/_8sdp">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:id="@+id/rememberBox"
+                    android:buttonTint="@color/colorAccent"
+                    android:textColor="@color/colorAccent"
+                    android:text="@string/remember_me"
+                    />
+
+                <TextView
+                    android:id="@+id/forgetPass"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:text="@string/forget_pass"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/login"
+                style="@style/ButtonTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="@string/login" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/or"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/registerNow"
+                style="@style/MyLargeTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="@string/register_now" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_b"
+    android:orientation="vertical"
+    android:padding="@dimen/_8sdp">
+
+    <TextView
+        style="@style/MyLargeTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/consultation_request" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            style="@style/CardViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp">
+                <EditText
+                    android:id="@+id/name"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:hint="@string/lawyer_name"
+                    android:inputType="text" />
+                <EditText
+                    android:id="@+id/type"
+                    style="@style/EditTextStyle"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_keyboard_arrow_down"
+                    android:drawableTint="@color/colorAccent"
+                    android:hint="@string/case_type" />
+
+                <EditText
+                    android:id="@+id/title"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:hint="@string/case_title"
+                    android:inputType="text" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/curvy_bg"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_4sdp">
+
+
+                    <TextView
+                        style="@style/NormalTextViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="@dimen/_4sdp"
+                        android:text="@string/attach_file" />
+
+                    <TextView
+                        android:id="@+id/browse"
+                        style="@style/ButtonTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:gravity="end"
+                        android:text="@string/browse" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/description"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/description"
+                    android:inputType="text" />
+
+                <TextView
+                    style="@style/ButtonTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:backgroundTint="@color/blue"
+                    android:text="@string/send"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </ScrollView>
+</LinearLayout>

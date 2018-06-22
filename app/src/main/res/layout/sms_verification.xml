@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MyLargeTextViewStyle"
+        android:text="@string/sms_verification"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center_horizontal"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MyLargeTextViewStyle"
+        android:text="@string/enter_sms_code"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center_horizontal"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center_horizontal"
+        android:hint="-  -  -  -  -"
+        android:backgroundTint="@color/grey"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3 mint left"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/resend_sms"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="end"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <TextView
+        style="@style/ButtonTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:id="@+id/submit"
+        android:backgroundTint="@color/blue"
+        android:text="@string/submit"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold" />
+</LinearLayout>

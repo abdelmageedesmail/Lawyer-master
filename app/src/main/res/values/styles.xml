@@ -1,0 +1,114 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="drawerArrowStyle">@style/DrawerHamburgerStyle</item>-->
+        <!--<item name="android:navigationIcon"-->
+        <item name="android:fontFamily">@font/cairo_regular</item>
+
+    </style>
+
+    <style name="DrawerHamburgerStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/black</item>
+    </style>
+
+    <style name="EditTextStyle" parent="Widget.AppCompat.EditText">
+
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:color">@color/colorAccent</item>
+        <item name="android:background">@drawable/curvy_bg</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="background">@drawable/curvy_bg</item>
+        <item name="android:textColorHint">@color/colorAccent</item>
+        <item name="android:paddingBottom">@dimen/_8sdp</item>
+        <item name="android:paddingTop">@dimen/_8sdp</item>
+        <item name="android:paddingRight">@dimen/_7sdp</item>
+        <item name="android:paddingLeft">@dimen/_7sdp</item>
+
+    </style>
+
+    <style name="MyLargeTextViewStyle" parent="android:Widget.TextView">
+
+        <item name="android:textSize">@dimen/_17sdp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="BorderedTextViewStyle" parent="android:Widget.TextView">
+
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="android:background">@drawable/curvy_bg</item>
+        <item name="android:paddingRight">@dimen/_18sdp</item>
+        <item name="android:paddingLeft">@dimen/_18sdp</item>
+        <item name="android:paddingTop">@dimen/_7sdp</item>
+        <item name="android:paddingBottom">@dimen/_7sdp</item>
+        <item name="android:foreground">?selectableItemBackground</item>
+    </style>
+
+    <!--Button TextView-->
+    <style name="ButtonTextView" parent="android:Widget.TextView">
+
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:background">@drawable/curvy_full_bg_white</item>
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingRight">@dimen/_14sdp</item>
+        <item name="android:paddingLeft">@dimen/_14sdp</item>
+        <item name="android:paddingTop">@dimen/_7sdp</item>
+        <item name="android:paddingBottom">@dimen/_7sdp</item>
+    </style>
+
+    <!--Card View Style-->
+    <style name="CardViewStyle" parent="CardView">
+        <item name="cardBackgroundColor">@color/transparent_bg</item>
+        <item name="android:padding">@dimen/_5sdp</item>
+        <item name="cardCornerRadius">@dimen/_5sdp</item>
+        <item name="cardElevation">@dimen/_5sdp</item>
+    </style>
+
+
+    <!--Radio Button Style-->
+    <style name="RadioButtonStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:buttonTint">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+
+
+    <!--Check Box Style-->
+    <style name="CheckBoxStyle" parent="Widget.AppCompat.CompoundButton.CheckBox">
+
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:buttonTint">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/_11sdp</item>
+    </style>
+
+    <!--Normal TextView -->
+    <style name="NormalTextViewStyle" parent="android:Widget.TextView">
+
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:gravity">center_horizontal</item>
+
+    </style>
+
+
+    <!-- Small TextView -->
+    <style name="SmallTextView" parent="android:Widget.TextView">
+
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:gravity">center_horizontal</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

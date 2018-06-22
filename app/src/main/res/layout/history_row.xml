@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent"
+    android:padding="@dimen/_5sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lawyer Name"
+        android:textSize="@dimen/_12sdp"
+        android:id="@+id/name"
+        android:paddingTop="@dimen/_8sdp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_12sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:id="@+id/date"
+        app:layout_constraintEnd_toStartOf="@id/viewLawyer"
+        app:layout_constraintStart_toEndOf="@id/name"
+        android:text="25 aug 1995"/>
+    <TextView
+        android:id="@+id/viewLawyer"
+        style="@style/ButtonTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_11sdp"
+        android:text="@string/view"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</android.support.constraint.ConstraintLayout>

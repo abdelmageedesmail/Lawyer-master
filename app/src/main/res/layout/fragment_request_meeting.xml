@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    tools:context=".view.fragment.MeetingsFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:backgroundTint="@color/colorAccent"
+        android:background="@drawable/curvy_bg"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:padding="@dimen/_2sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/NormalTextViewStyle"
+            android:text="@string/upcoming"
+            android:background="@drawable/curvy_bg"
+            android:backgroundTint="@color/blue"
+            android:padding="@dimen/_5sdp"
+            android:id="@+id/upComing"
+            android:layout_weight="1"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/NormalTextViewStyle"
+            android:text="@string/reschecduled"
+            android:layout_weight="1"
+            android:padding="@dimen/_5sdp"
+            android:id="@+id/rescheduled"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/NormalTextViewStyle"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/canceled"
+            android:id="@+id/canceled"
+            android:textColor="@color/black"
+            android:layout_weight="1"/>
+    </LinearLayout>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        style="@style/CardViewStyle"
+        android:layout_marginTop="@dimen/_10sdp">
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler"/>
+    </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</FrameLayout>

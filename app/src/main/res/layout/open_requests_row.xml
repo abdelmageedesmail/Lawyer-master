@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    android:background="@color/colorAccent"
+    android:layout_margin="@dimen/_8sdp">
+
+    <TextView
+        style="@style/NormalTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Request Name"
+        android:id="@+id/requestName"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        style="@style/NormalTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="18 Jan"
+        android:id="@+id/date"
+        android:textColor="@color/black" />
+
+    <TextView
+        style="@style/NormalTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/desc"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Description Description Description Description"
+        android:textColor="@color/grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/viewDetails"
+            style="@style/ButtonTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:backgroundTint="@color/blue"
+            android:text="@string/view_detail"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/attachQuotation"
+            style="@style/ButtonTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:backgroundTint="@color/blue"
+            android:text="@string/attach_quotation"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

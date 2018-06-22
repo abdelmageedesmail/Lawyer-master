@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg2"
+    android:orientation="vertical">
+
+
+    <TextView
+        style="@style/MyLargeTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/lawyer_profile" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/container1"
+            style="@style/CardViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="locale"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_40sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:paddingTop="@dimen/_5sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/container"
+                        android:layout_width="@dimen/_92sdp"
+                        android:layout_height="@dimen/_92sdp"
+                        android:layout_alignParentStart="true"
+                        app:cardCornerRadius="@dimen/_2sdp">
+
+                        <ImageView
+                            android:id="@+id/pic"
+                            android:layout_width="@dimen/_90sdp"
+                            android:layout_height="@dimen/_90sdp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/quo_img" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/container"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/name"
+                            style="@style/NormalTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="15dp"
+
+                            android:text="Lawyer Name" />
+
+                        <TextView
+                            android:id="@+id/desc"
+                            style="@style/NormalTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/name"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_toEndOf="@id/container"
+                            android:text="desc desc desc"
+                            android:textSize="@dimen/_11sdp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/edit"
+                        style="@style/NormalTextViewStyle"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:drawableStart="@drawable/edit"
+                        android:drawableTint="@color/colorAccent"
+                        android:gravity="center"
+                        android:text="@string/edit"
+                        android:textSize="@dimen/_11sdp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/NormalTextViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="@string/major_cases" />
+
+                    <!--<ListView-->
+                    <!--android:id="@+id/majorCases"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content" />-->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ic_chevron_left" />
+
+                        <TextView
+                            android:id="@+id/major"
+                            style="@style/NormalTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:text="major" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ic_chevron_left" />
+
+                        <TextView
+                            android:id="@+id/majorArabic"
+                            style="@style/NormalTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+
+                            android:gravity="center"
+                            android:text="major" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_5sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:text="@string/avilable_time"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/availableTime"
+                        style="@style/NormalTextViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="09:00 am to 8:30 pm"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/_11sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_5sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:text="@string/consultation_fee"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/feeAmount"
+                        style="@style/NormalTextViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="140 KD"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/_11sdp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        app:srcCompat="@drawable/address" />
+
+                    <TextView
+                        android:id="@+id/address"
+                        style="@style/NormalTextViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="7dp"
+                        android:drawableTint="@color/colorAccent"
+                        android:text="@string/address" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        app:srcCompat="@drawable/mail" />
+
+                    <TextView
+                        android:id="@+id/webSite"
+                        style="@style/NormalTextViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_marginStart="7dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="7dp"
+                        android:layout_height="wrap_content"
+                        android:drawableTint="@color/colorAccent"
+                        android:text="www.ema.com" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        app:srcCompat="@drawable/call" />
+
+                    <TextView
+                        android:id="@+id/phone"
+                        style="@style/NormalTextViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="7dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="7dp"
+                        android:drawableTint="@color/colorAccent"
+                        android:text="19-1522-100" />
+                </LinearLayout>
+
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_15sdp"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/lawyerBook"-->
+                <!--style="@style/ButtonTextView"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="@dimen/_20sdp"-->
+                <!--android:layout_marginEnd="@dimen/_2sdp"-->
+                <!--android:layout_marginTop="@dimen/_15sdp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:backgroundTint="@color/blue"-->
+                <!--android:maxLines="1"-->
+                <!--android:text="@string/lawyer_book_meet"-->
+                <!--android:textColor="@color/colorAccent"-->
+                <!--android:textSize="@dimen/_10sdp"-->
+                <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/approve"-->
+                <!--style="@style/ButtonTextView"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="@dimen/_20sdp"-->
+                <!--android:layout_marginEnd="@dimen/_2sdp"-->
+                <!--android:layout_marginTop="@dimen/_15sdp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:backgroundTint="@color/blue"-->
+                <!--android:maxLines="1"-->
+                <!--android:text="@string/consultation_request"-->
+                <!--android:textColor="@color/colorAccent"-->
+                <!--android:textSize="@dimen/_10sdp"-->
+                <!--android:textStyle="bold" />-->
+                <!--</LinearLayout>-->
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+    </ScrollView>
+
+</LinearLayout>

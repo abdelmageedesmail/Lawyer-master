@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_1sdp"
+    android:padding="@dimen/_10sdp">
+
+    <android.support.v7.widget.CardView
+        style="@style/CardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_8sdp">
+
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/NormalTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="Lawyer Name here" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@color/colorAccent"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="1"
+                    android:gravity="start">
+
+                    <TextView
+                        style="@style/SmallTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="@dimen/_8sdp"
+                        android:text="@string/date"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/date"
+                        style="@style/SmallTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12 Jan"
+                        android:textColor="@color/blue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:gravity="end">
+
+                    <TextView
+                        style="@style/SmallTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="@dimen/_8sdp"
+                        android:text="@string/time"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/time"
+                        style="@style/SmallTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10 : 30"
+                        android:textColor="@color/blue" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/desc"
+                    style="@style/NormalTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:visibility="gone"
+                    android:text="Description Description Description Description"
+                    android:textColor="@color/grey" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/book"
+                    style="@style/ButtonTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:backgroundTint="@color/blue"
+                    android:maxLines="1"
+                    android:text="@string/lawyer_book_meet"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lawyerProfile"
+                    style="@style/ButtonTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:backgroundTint="@color/blue"
+                    android:maxLines="1"
+                    android:text="@string/lawyer_profile"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

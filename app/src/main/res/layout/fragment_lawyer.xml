@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:orientation="vertical"
+    tools:context=".view.fragment.QuotationFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lawyers"
+        style="@style/MyLargeTextViewStyle"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/EditTextStyle"
+            android:hint="@string/lawyer_name"
+            android:id="@+id/name"
+            android:layout_weight=".3"/>
+
+        <TextView
+            android:id="@+id/search"
+            style="@style/ButtonTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:maxLines="1"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:backgroundTint="@color/blue"
+            android:text="@string/find_lawyer"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+</LinearLayout>

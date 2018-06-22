@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_15sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginEnd="@dimen/_15sdp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/CardViewStyle"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="REQUEST TITLE HERE"
+                android:id="@+id/title"
+                style="@style/NormalTextViewStyle"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/colorAccent"
+                android:layout_marginTop="@dimen/_15sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_detail"
+                android:id="@+id/viewDetails"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="@dimen/_4sdp"
+                style="@style/NormalTextViewStyle"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:drawableEnd="@drawable/ic_arrow_forward"
+                android:drawableTint="@color/colorAccent"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/colorAccent"
+                android:layout_marginTop="@dimen/_5sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_15sdp">
+
+                <!--<TextView-->
+                    <!--style="@style/ButtonTextView"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="@dimen/_15sdp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:backgroundTint="@color/blue"-->
+                    <!--android:text="@string/edit"-->
+                    <!--android:textColor="@color/colorAccent"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textSize="@dimen/_11sdp"-->
+                    <!--android:layout_marginEnd="@dimen/_2sdp"/>-->
+
+                <!--<TextView-->
+                    <!--style="@style/ButtonTextView"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="@dimen/_15sdp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:backgroundTint="@color/blue"-->
+                    <!--android:text="@string/delete"-->
+                    <!--android:textSize="@dimen/_11sdp"-->
+                    <!--android:textColor="@color/colorAccent"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:layout_marginEnd="@dimen/_2sdp"/>-->
+                <TextView
+                    style="@style/ButtonTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/blue"
+                    android:text="@string/quotations"
+                    android:maxLines="1"
+                    android:id="@+id/attachQuotation"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="@dimen/_2sdp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

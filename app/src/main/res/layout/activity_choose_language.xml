@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/language_bg"
+    tools:context=".view.SelectLanguageActivity">
+
+
+    <TextView
+        android:id="@+id/selectLangText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_language"
+        style="@style/MyLargeTextViewStyle"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/selectLangText"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        >
+
+        <TextView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:text="@string/eng"
+            android:gravity="center_horizontal"
+            style="@style/BorderedTextViewStyle"
+            android:id="@+id/english"
+            android:layout_margin="@dimen/_15sdp"/>
+
+
+        <TextView
+            android:layout_width="@dimen/_100sdp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:text="@string/arabic"
+            style="@style/BorderedTextViewStyle"
+            android:id="@+id/arabic"
+            android:layout_margin="@dimen/_15sdp"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
